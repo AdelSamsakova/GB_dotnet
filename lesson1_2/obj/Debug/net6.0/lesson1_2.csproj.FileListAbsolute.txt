@@ -1,0 +1,15 @@
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\bin\Debug\net6.0\lesson1_2.exe
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\bin\Debug\net6.0\lesson1_2.deps.json
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\bin\Debug\net6.0\lesson1_2.runtimeconfig.json
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\bin\Debug\net6.0\lesson1_2.dll
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\bin\Debug\net6.0\lesson1_2.pdb
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.csproj.AssemblyReference.cache
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.AssemblyInfoInputs.cache
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.AssemblyInfo.cs
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.csproj.CoreCompileInputs.cache
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.dll
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\refint\lesson1_2.dll
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.pdb
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\lesson1_2.genruntimeconfig.cache
+C:\Users\asamsakova\Desktop\Адель\Учеба\GeekBrains\Dotnet\lesson1_2\obj\Debug\net6.0\ref\lesson1_2.dll

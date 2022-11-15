@@ -31,15 +31,17 @@ void PrintArr(int[,] my_arr){
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
-//Решение 1:
+//Решение:
 int[,] SortArrStr(int[,] arr) {
     int[,] result_arr = new int[arr.GetLength(0), arr.GetLength(1)];
     for (int i=0; i < arr.GetLength(0); i++) {
         for (int j=0; j < arr.GetLength(1); j++) {
-            if (arr[i, j] < arr[i-1, j]) {
-                int tmp = arr[i-1, j];
-                arr[i-1, j] = arr[i, j];
-                arr[i, j] = tmp;
+            for (int t = 0; t < arr.GetLength(1) - 1; t++) {
+                if (arr[i, t+1] > arr[i, t]) {
+                    int tmp_var = arr[i, t];
+                    arr[i, t] = arr[i, t+1];
+                    arr[i, t+1] = tmp_var;
+                }
             }
         }
     }
@@ -50,7 +52,7 @@ int[,] my_arr = RandomIntArr(3, 4, 1, 10);
 PrintArr(my_arr);
 Console.WriteLine();
 PrintArr(SortArrStr(my_arr));
-
+//____________________________________________________________________________________________________________________________________
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 // Например, задан массив:
@@ -60,8 +62,27 @@ PrintArr(SortArrStr(my_arr));
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+int[,] arr_2 = RandomIntArr(3, 4, 1, 20);
+void MinSum(int[,] arr) {
+    int result = 1;
+    int sum = 0;
+    for (int i=0; i < arr.GetLength(0); i++) {
+        int temp_sum = 0;
+        for (int j=0; j < arr.GetLength(1); j++) {
+            temp_sum += arr[i, j];   
+        }
+        if (temp_sum < sum) { 
+            sum = temp_sum; 
+            result = i+1;
+        }
+        else sum = temp_sum;
+    }
+    Console.WriteLine($"Наименьшая сумма элементов находится в {result} строке");
+}
+PrintArr(arr_2);
+MinSum(arr_2);
 
-
+//____________________________________________________________________________________________________________________________________
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 // Например, даны 2 матрицы:
 // 2 4 | 3 4
@@ -70,20 +91,26 @@ PrintArr(SortArrStr(my_arr));
 // 18 20
 // 15 18
 
+int[,] my_arr1 = RandomIntArr(2, 2, 1, 10);
+int[,] my_arr2 = RandomIntArr(3, 4, 1, 10);
 
+int [,] ArrProd(int[,] arr1, int [,] arr2) {
+    int[,] result_arr = new int [arr1.GetLength(0),arr1.GetLength(1)];  
+    if (arr1.GetLength(1) == arr2.GetLength(0)) {
+        for (int i=0; i < arr1.GetLength(0); i++) {
+            for (int j=0; j < arr1.GetLength(0); j++) {
+                for (int t = 0; t < arr2.GetLength(0); t++) {
+                    result_arr[i, t] += arr1[i, j] * arr2[j, t];
+                }
+            }  
+        }
+    }
+    else Console.WriteLine("К сожалению размерности строк первого массива и столбцов второго массива не совпадают");
+    return result_arr;
+}
+PrintArr(my_arr1);
+Console.WriteLine();
+PrintArr(my_arr2);
+Console.WriteLine();
+PrintArr(ArrProd(my_arr1, my_arr2));
 
-// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
-// Массив размером 2 x 2 x 2
-// 66(0,0,0) 25(0,1,0)
-// 34(1,0,0) 41(1,1,0)
-// 27(0,0,1) 90(0,1,1)
-// 26(1,0,1) 55(1,1,1)
-
-
-
-// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
-// Например, на выходе получается вот такой массив:
-// 01 02 03 04
-// 12 13 14 05
-// 11 16 15 06
-// 10 09 08 07
